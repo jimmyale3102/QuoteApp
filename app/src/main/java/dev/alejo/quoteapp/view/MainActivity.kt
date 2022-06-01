@@ -1,4 +1,4 @@
-package dev.alejo.quoteapp
+package dev.alejo.quoteapp.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
