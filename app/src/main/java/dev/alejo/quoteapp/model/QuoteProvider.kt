@@ -4,7 +4,7 @@ class QuoteProvider {
 
     companion object {
 
-        fun getRandomQuote(): QuoteModel = quotes[(0..quotes.size).random()]
+        fun getRandomQuote(): QuoteModel = quotes[(quotes.indices).random()]
 
         private val quotes = listOf(
             QuoteModel(
