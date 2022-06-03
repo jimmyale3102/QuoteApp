@@ -18,4 +18,11 @@ class QuoteRepository {
         return response
     }
 
+    fun getRandomQuote(): QuoteModel? {
+        val quotes = QuoteProvider.quotes
+        if(!quotes.isNullOrEmpty())
+            return quotes[(quotes.indices).random()]
+        return null
+    }
+
 }
