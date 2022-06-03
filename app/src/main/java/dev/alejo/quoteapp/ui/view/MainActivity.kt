@@ -35,4 +35,5 @@ class MainActivity : AppCompatActivity() {
     private fun initUI() {
         binding.quoteContainer.setOnClickListener { quoteViewModel.getRandomQuote() }
     }
+
 }

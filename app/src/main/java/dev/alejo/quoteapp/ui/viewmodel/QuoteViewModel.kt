@@ -1,5 +1,6 @@
 package dev.alejo.quoteapp.ui.viewmodel
 
+import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -26,6 +27,7 @@ class QuoteViewModel: ViewModel() {
         }
     }
 
+    @SuppressLint("NullSafeMutableLiveData")
     fun getRandomQuote() {
         isLoadingData.postValue(true)
         val quote = getRandomQuoteUseCase()
