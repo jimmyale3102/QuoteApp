@@ -1,3 +1,3 @@
-package dev.alejo.quoteapp.model
+package dev.alejo.quoteapp.data.model
 
 data class QuoteModel(val quote: String, val author: String)

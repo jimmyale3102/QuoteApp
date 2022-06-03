@@ -1,11 +1,11 @@
-package dev.alejo.quoteapp.view
+package dev.alejo.quoteapp.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import dev.alejo.quoteapp.databinding.ActivityMainBinding
-import dev.alejo.quoteapp.viewmodel.QuoteViewModel
+import dev.alejo.quoteapp.ui.viewmodel.QuoteViewModel
 
 class MainActivity : AppCompatActivity() {
 

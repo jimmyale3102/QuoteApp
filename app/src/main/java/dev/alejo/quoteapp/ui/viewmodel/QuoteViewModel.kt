@@ -1,9 +1,9 @@
-package dev.alejo.quoteapp.viewmodel
+package dev.alejo.quoteapp.ui.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import dev.alejo.quoteapp.model.QuoteModel
-import dev.alejo.quoteapp.model.QuoteProvider
+import dev.alejo.quoteapp.data.model.QuoteModel
+import dev.alejo.quoteapp.data.model.QuoteProvider
 
 class QuoteViewModel: ViewModel() {
 

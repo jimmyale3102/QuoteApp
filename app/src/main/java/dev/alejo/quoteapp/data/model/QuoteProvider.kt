@@ -1,4 +1,4 @@
-package dev.alejo.quoteapp.model
+package dev.alejo.quoteapp.data.model
 
 class QuoteProvider {
 
