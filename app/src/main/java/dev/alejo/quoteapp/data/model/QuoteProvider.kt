@@ -1,10 +1,9 @@
 package dev.alejo.quoteapp.data.model
 
-class QuoteProvider {
+import javax.inject.Inject
+import javax.inject.Singleton
 
-    companion object {
-
-        var quotes: List<QuoteModel> = emptyList()
-    }
-
+@Singleton
+class QuoteProvider @Inject constructor() {
+    var quotes: List<QuoteModel> = emptyList()
 }
