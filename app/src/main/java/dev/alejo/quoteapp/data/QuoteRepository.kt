@@ -4,7 +4,7 @@ import dev.alejo.quoteapp.core.extensions.toDomain
 import dev.alejo.quoteapp.data.database.dao.QuoteDao
 import dev.alejo.quoteapp.data.database.entities.QuoteEntity
 import dev.alejo.quoteapp.data.network.QuoteService
-import dev.alejo.quoteapp.domain.model.Quote
+import dev.alejo.quoteapp.domain.model.QuoteItem
 import javax.inject.Inject
 
 /**
@@ -16,11 +16,11 @@ class QuoteRepository @Inject constructor(
     private val quoteDao: QuoteDao
 ) {
 
-    suspend fun getAllQuotesFromApi(): List<Quote> {
+    suspend fun getAllQuotesFromApi(): List<QuoteItem> {
         return api.getQuote().map { quote -> quote.toDomain() }
     }
 
-    suspend fun getAllQuotesFromDatabase(): List<Quote> {
+    suspend fun getAllQuotesFromDatabase(): List<QuoteItem> {
         return quoteDao.getAllQuotes().map { quote -> quote.toDomain() }
     }
 
