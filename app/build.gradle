@@ -48,6 +48,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     // Mockk
     testImplementation 'io.mockk:mockk:1.9.3'
+    // Core testing
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
 
     // Fragment
     implementation "androidx.fragment:fragment-ktx:1.4.1"
@@ -62,6 +64,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0"
     // Dagger-Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
